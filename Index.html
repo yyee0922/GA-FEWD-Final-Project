@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Final-Project.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"></script>
+  <script defer src="https://kit.fontawesome.com/77e1f6c613.js" crossorigin="anonymous"></script>
+  <script defer src="Final-Project.js"></script>
+  <title>Final Project</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <section class="navbar-left">
+        <a href="#">
+          <img class="WG-logo" src="img/logo.png" title="WG Accounting Services" alt="WG Accounting Services">
+        </a>
+        <a class="navbar-link" href="#" id="navbar-our-services">Our Services</a>
+        <a class="navbar-link" href="#">Blogs</a>
+        <a class="navbar-link" href="#">About Us</a>
+      </section>
+      <section class="navbar-right">
+        <a class="navbar-link" href="#" title="Login/Sign Up"><i class="fa-regular fa-user"></i></a>
+        <a class="navbar-link" href="#" title="Contact Us"><i class="fa-regular fa-envelope"></i></a>
+        <a class="navbar-link" href="#" title="FAQ"><i class="fa-regular fa-comment-dots"></i></a>
+      </section>
+      <section id="burger-menu-trigger" class="navbar-right-mobile">
+        <i class="fa-solid fa-bars"></i>
+      </section>
+    </nav>
+  </header>
+
+  <!--Burger Menu-->
+  <aside class="burger-menu-position burger-menu-design" id="burger-menu">
+    <header class="burger-menu-header">
+      <img class="WG-logo" src="img/logo.png" title="WG Accounting Services" alt="WG Accounting Services">
+      <i id="menu-close" class="fa-regular fa-circle-xmark"></i>
+    </header>
+    <div class="burger-menu-content burger-menu-top">
+      <a href="#"><h3>Our Services</h3></a>
+      <div class="burger-service-types">
+        <a href="#"><h4>Audit Assurance</h4></a>
+        <a href="#"><h4>Taxation</h4></a>
+        <a href="#"><h4>Corporate Finance</h4></a>
+        <a href="#"><h4>Bookkeeping</h4></a>
+      </div>
+      <a href="#"><h3>Blogs</h3></a>
+      <a href="#"><h3>About Us</h3></a>
+    </div>
+    <div class="burger-menu-content burger-menu-bottom">
+      <a href="#"><h4><i class="fa-regular fa-user"></i>Login/Sign Up</h4></a>
+      <a href="#"><h4><i class="fa-regular fa-envelope"></i>Contact Us</h4></a>
+      <a href="#"> <h4><i class="fa-regular fa-comment-dots"></i>FAQ</h4></a>
+    </div>
+  </aside>
+
+  <!--Dropdown Menu -->
+  <aside class="dropdown-menu" id="our-services-menu">
+    <div class="dropdown-menu-context">
+      <h2>Services</h2>
+      <p>WG helps clients create long-term value for all stakeholders. Our services and solutions provide trust through assurance and help clients transform grow and operate.</p>
+    </div>
+    <div class="dropdown-menu-item">
+      <a href="#"><h4>Audit Assurance</h4></a>
+      <a href="#"><h4>Taxation</h4></a>
+      <a href="#"><h4>Corporate Finance</h4></a>
+      <a href="#"><h4>Bookkeeping</h4></a>
+      <a href="#" id="services-explore-button">EXPLORE</a>
+    </div>
+  </aside>
+
+  <!-- Hero Content -->
+  <section class="hero-container">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Empowering Business to Focus on</h1>
+      <h1 class="hero-title-2">What They Do Best</h1>
+      <p>Count on us for your financial success.</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Our Services -->
+    <section class="services-container">
+      <div class="services-main">
+        <h2>Services We Offer</h2>
+        <p>Our services and solutions provide trust through assurance and help clients transform, grow and operate. Everything we do, we do to help our clients get closer to their goals.</p>
+        <a href="#" class="contact-us-button">Contact Us</a> <!--link to contact us page-->
+      </div>
+      <div class="service-types">
+        <div class="service-types-row">
+          <a class="services services-left" href="#"> <!--link to another page, anchor-->
+            <div class="services-item audit-assurance">
+              <h3 class="services-item-title">Audit Assurance</h3>
+              <p>We help you achieve your goals by delivering clarity around accounting, internal controls and broader business risks.</p>
+            </div>
+          </a>
+          <a class="services services-right" href="#">
+            <div class="services-item taxation">
+              <h3 class="services-item-title">Taxation</h3>
+              <p>We ensure individuals and businesses comply with tax regulations and help you navigate the complexities of your tax obligations with ease and confidence.</p>
+            </div>
+          </a>
+        </div>
+        <div class="service-types-row">
+          <a class="services services-left" href="#">
+            <div class="services-item corporate-finance">
+              <h3 class="services-item-title">Corporate Finance</h3>
+              <p>We help to unlock your business potential and opportunities with our experienced advisers.</p>
+            </div>
+          </a>
+          <a class="services services-right" href="#">
+            <div class="services-item bookkeeping">
+              <h3 class="services-item-title">Bookkeeping</h3>
+              <p>We ensure accurate financial record-keeping and reporting for your business.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Partners -->
+    <section class="business-partners">
+      <h1>Trusted by Well Known Companies</h1>
+      <div class="business-partners-marquee">
+        <div class="business-partners-marquee-content">
+          <img id="jjrichards" src="img/logo-loop-jjrichard.png" title="J.J.Richards">
+          <img id="jbhifi" src="img/logo-loop-jbhifi.png" title="JB Hi-Fi">
+          <img id="mwave" src="img/logo-loop-mwave.png" title="Mwave">
+          <img id="rmit" src="img/logo-loop-RMIT.svg" title="RMIT">
+          <img id="scorptec" src="img/logo-loop-scorptec.png" title="Scorptec">
+          <img id="specsavers" src="img/logo-loop-specsavers.svg" title="Specsavers">
+          <img id="unimel" src="img/logo-loop-unimel.png" title="University of Melbourne">
+          <img id="yamaha" src="img/logo-loop-yamaha.png" title="Yamaha">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Testimonials -->
+  <section class="testimonial">
+    <div class="testimonial-carousel swiffy-slider slider-nav-animation slider-nav-animation-fadein slider-nav-autoplay"
+      id="swiffy-animation" data-slider-nav-autoplay-interval="6000">
+      <ul class="slider-container" id="container1">
+        <li id="slide1" class="slide-visible">
+          <div class="testimonial-carousel-content">
+            <div class="testimonial-carousel-content-profile">
+              <img src="img/testimonial-profile-1.png" title="Avatar">
+            </div>
+            <div class="testimonial-carousel-content-quote">
+              <h4>I have been using WG Accounting Services for my business for the past 5 years and I couldn't be happier with their level of expertise and service. They have helped me to save money on taxes and improve my overall financial management. I highly recommend them to anyone looking for top-notch accounting services. </h4>
+              <p>Doge S.</p>
+              <p class="quote-occupation">Director of Know Your Meme Co.</p>
+            </div>
+          </div>
+        </li>
+        <li id="slide2" class="slide-visible">
+          <div class="testimonial-carousel-content">
+            <div class="testimonial-carousel-content-profile">
+              <img src="img/testimonial-profile-2.jpg" title="Avatar">
+            </div>
+            <div class="testimonial-carousel-content-quote">
+              <h4>As a small business owner, I have been struggling with managing my finances and keeping up with tax requirements. That's when I found WG Accounting Services. They have been a game changer for my business! Their team is professional, knowledgeable and always available to answer my questions. I can now focus on growing my business, while they take care of the rest.</h4>
+              <p>Homer S.</p>
+              <p class="quote-occupation">Director of Duff Breweries</p>
+            </div>
+          </div>
+        </li>
+        <li id="slide3" class="slide-visible">
+          <div class="testimonial-carousel-content">
+            <div class="testimonial-carousel-content-profile">
+              <img src="img/testimonial-profile-3.jpg" title="Avatar">
+            </div>
+            <div class="testimonial-carousel-content-quote">
+              <h4>I recently started my own business and was in need of a reliable accounting firm to help me manage my finances. A friend recommended WG Accounting Services and I am so grateful that they did. The team at WG has been incredibly helpful in setting up my financial systems and guiding me through tax compliance. I would highly recommend their services to any new business owner.</h4>
+              <p>Sir Spiff</p>
+              <p class="quote-occupation">Director of The Spiffing Brit Pty Ltd</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <button type="button" class="slider-nav" aria-label="Go to previous"></button>
+      <button type="button" class="slider-nav slider-nav-next" aria-label="Go to next"></button>
+
+      <div class="slider-indicators">
+        <button aria-label="Go to slide" class="active"></button>
+        <button aria-label="Go to slide"></button>
+        <button aria-label="Go to slide"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media -->
+  <section class="follow-us">
+    <h1>Follow WG Accounting Services on </h1>
+    <div class="follow-us-links">
+      <a class="follow-us-link" id="facebook" href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a class="follow-us-link" id="twitter" href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a class="follow-us-link" id="linkedin" href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a class="follow-us-link" id="youtube" href="#" title="Youtube"><i class="fa-brands fa-youtube"></i></a>
+      <a class="follow-us-link" id="instagram" href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <p>WG Accounting | WG Accounting Services Pty Ltd. Level 8, 189 Flinders Lane, Melbourne VIC 3000. ABN: 12 345 678 910</p>
+      <p>© Copyright 2023 WG Accounting | WG Accounting Services Pty Ltd. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
