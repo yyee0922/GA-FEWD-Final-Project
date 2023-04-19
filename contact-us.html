@@ -5,11 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="final-project.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"></script>
+  <link rel="stylesheet" href="contact-us.css">
   <script defer src="https://kit.fontawesome.com/77e1f6c613.js" crossorigin="anonymous"></script>
-  <script defer src="final-project.js"></script>
+  <script defer src="contact-us.js"></script>
   <title>WG - Contact Us</title>
 </head>
 
@@ -17,7 +15,7 @@
     <header>
         <nav class="navbar">
             <section class="navbar-left">
-                <a href="#">
+                <a href="/">
                     <img class="WG-logo" src="img/logo.png" title="WG Accounting Services" alt="WG Accounting Services">
                 </a>
                 <a class="navbar-link" href="#" id="navbar-our-services">Our Services</a>
@@ -26,7 +24,7 @@
             </section>
             <section class="navbar-right">
                 <a class="navbar-link" href="#" title="Login/Sign Up"><i class="fa-regular fa-user"></i></a>
-                <a class="navbar-link" href="#" title="Contact Us"><i class="fa-regular fa-envelope"></i></a>
+                <a class="navbar-link" href="/contact-us.html" title="Contact Us"><i class="fa-regular fa-envelope"></i></a>
                 <a class="navbar-link" href="#" title="FAQ"><i class="fa-regular fa-comment-dots"></i></a>
             </section>
             <section id="burger-menu-trigger" class="navbar-right-mobile">
@@ -35,14 +33,119 @@
         </nav>
     </header>
 
+  <!--Burger Menu-->
+  <aside class="burger-menu-position burger-menu-design" id="burger-menu">
+    <header class="burger-menu-header">
+      <img class="WG-logo" src="img/logo.png" title="WG Accounting Services" alt="WG Accounting Services">
+      <i id="menu-close" class="fa-regular fa-circle-xmark"></i>
+    </header>
+    <div class="burger-menu-content burger-menu-top">
+      <a href="#"><h3>Our Services</h3></a>
+      <div class="burger-service-types">
+        <a href="#"><h4>Audit Assurance</h4></a>
+        <a href="#"><h4>Taxation</h4></a>
+        <a href="#"><h4>Corporate Finance</h4></a>
+        <a href="#"><h4>Bookkeeping</h4></a>
+      </div>
+      <a href="#"><h3>Blogs</h3></a>
+      <a href="#"><h3>About Us</h3></a>
+    </div>
+    <div class="burger-menu-content burger-menu-bottom">
+      <a href="#"><h4><i class="fa-regular fa-user"></i>Login/Sign Up</h4></a>
+      <a href="/contact-us.html"><h4><i class="fa-regular fa-envelope"></i>Contact Us</h4></a>
+      <a href="#"><h4><i class="fa-regular fa-comment-dots"></i>FAQ</h4></a>
+    </div>
+  </aside>
+
+  <!--Dropdown Menu -->
+  <aside class="dropdown-menu" id="our-services-menu">
+    <div class="dropdown-menu-context">
+      <h2>Services</h2>
+      <p>WG helps clients create long-term value for all stakeholders. Our services and solutions provide trust through assurance and help clients transform grow and operate.</p>
+    </div>
+    <div class="dropdown-menu-item">
+      <a href="#"><h4>Audit Assurance</h4></a>
+      <a href="#"><h4>Taxation</h4></a>
+      <a href="#"><h4>Corporate Finance</h4></a>
+      <a href="#"><h4>Bookkeeping</h4></a>
+      <a href="#" id="services-explore-button">EXPLORE</a>
+    </div>
+  </aside>
+
+  <!-- Hero Content -->
     <section class="hero-container">
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Empowering Business to Focus on</h1>
-            <h1 class="hero-title-2">What They Do Best</h1>
-            <p>Count on us for your financial success.</p>
-        </div>
     </section>
+
+  <!-- Main Content -->
+    <main>
+
+        <!-- Office Locations -->
+        <section class="locations-container">
+            <h4 class="locations-header"><i class="fa-solid fa-location-dot"></i>Our Offices</h4>
+            <div class="location-card">
+                <div class="location">
+                    <p class="location-state">Melbourne office</p>
+                    <p class="location-address">Level 8, 189 Flinders Lane, Melbourne VIC 3000, Australia.</p>
+                    <p class="location-phone"><i class="fa-solid fa-phone"></i>03 8888 8888</p>
+                </div>
+                <div class="location">
+                    <p class="location-state">Sydney Office</p>
+                    <p class="location-address">Governor Macquarie Tower, Level 18, 1 Farrer Place, Sydney, NSW 2000, Australia.</p>
+                    <p class="location-phone"><i class="fa-solid fa-phone"></i>02 8888 8888</p>
+                </div>
+                <div class="location">
+                    <p class="location-state">Brisbane Office</p>
+                    <p class="location-address">Level 12, Adelaide Street, Brisbane City, QLD 4000, Australia.</p>
+                    <p class="location-phone"><i class="fa-solid fa-phone"></i>07 8888 8888</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Us Form -->
+        <section class="contact-us">
+            <h1>Connect with us</h1>
+            <p>All fields are required</p>
+            <form id="contact-us-form">
+                <fieldset>
+                    <div class="form-rows">
+                        <label for="first-name">First Name </label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    <div class="form-rows">
+                        <label for="last-name">Last Name </label>
+                        <input type="last-name" id="last-name" name="tel">
+                    </div>
+                    <div class="form-rows">
+                        <label for="email">E-mail </label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-rows">
+                        <label for="enquiry">What can we help you with?</label>
+                        <select id="fave-colour" name="fave-colour">
+                            <option>Select</option>
+                            <option>Career Opportunities</option>
+                            <option>Login Requests</option>
+                            <option>Media Inquiries</option>
+                            <option>Services</option>
+                            <option>Sponsorship</option>
+                            <option>Website Feedback</option>
+                            <option>None of the above</option>
+                          </select>
+                    </div>
+                    <div class="form-rows">
+                        <label for="message">Message </label>
+                        <textarea id="message" name="message" rows="4"></textarea> 
+                    </div>
+                    <div class="mailing-list">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Join our mailing list</label>
+                    </div>
+                    <input class="contact-us-submit" type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <div class="footer">
