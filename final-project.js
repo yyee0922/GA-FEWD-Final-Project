@@ -27,7 +27,9 @@ function positionDropdownMenu() {
     // to obtain the left coordinate value of "Our Services" in nav bar 
     let parentMenu = ourServicesNav.getBoundingClientRect();
     // with the value obtain above, position dropdown menu under the parent "Our Services"
-    dropdownMenu.style.left = (parentMenu.left - 32) + 'px';
+    dropdownMenu.style.left = (parentMenu.left - 32) + 'px';    
+    // add window.scrollY to account for scrolling, as Navigation bar is fixed position 
+    dropdownMenu.style.top = (parentMenu.bottom + window.scrollY) + 'px';
 }
 
 function showDropdownMenu() {
@@ -41,4 +43,3 @@ function hideDropdownMenu() {
 
 ourServicesNav.addEventListener('mouseover', showDropdownMenu);
 dropdownMenu.addEventListener('mouseleave', hideDropdownMenu);
-
